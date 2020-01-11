@@ -1,0 +1,16 @@
+{
+  "name": "curso-javascript-projeto-whatsapp-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts":{
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": "https://github.com/zorasantos/project-whatsApp-clone.git",
+  "author": "Zoranildo Santos <zoranildo22@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
+  }
+}
