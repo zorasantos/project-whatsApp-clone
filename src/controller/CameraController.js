@@ -1,4 +1,4 @@
-class CameraController {
+export class CameraController {
 
     constructor(videoEl) {
 
@@ -15,6 +15,15 @@ class CameraController {
         }).catch(err => {
             console.error(err);
         })
+
+    }
+    stop() {
+
+        this._stream.getAudioTracks().forEach(track => {
+
+            track.stop();
+
+        });
 
     }
 

@@ -2,7 +2,7 @@
   "name": "curso-javascript-projeto-whatsapp-clone",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts":{
+  "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server"
   },
