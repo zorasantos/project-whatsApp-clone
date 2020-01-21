@@ -252,6 +252,10 @@ import {DocumentPreviewController} from './DocumentPreviewController';
 
             if (this.el.inputDocument.files.length) {
 
+                this.el.panelDocumentPreview.css({
+                    'height': '1%'
+                });
+
                 let file = this.el.inputDocument.files[0];
 
                 this._documentPreviewController = new DocumentPreviewController(file);
@@ -263,7 +267,15 @@ import {DocumentPreviewController} from './DocumentPreviewController';
                     this.el.imagePanelDocumentPreview.show();
                     this.el.filePanelDocumentPreview.hide();
 
+                    this.el.panelDocumentPreview.css({
+                        'height': '100%'
+                    });
+
                 }).catch(err => {
+
+                    this.el.panelDocumentPreview.css({
+                        'height': '1%'
+                    });
 
                     switch(file.type) {
 
